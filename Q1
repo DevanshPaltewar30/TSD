@@ -1,0 +1,23 @@
+Develop a Java program to take user input for name and age and display a welcome message.
+
+
+import java.util.Scanner;
+public class WelcomeUser {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        System.out.println("Welcome, " + name + " You are " + age + " years old.");
+
+        scanner.close();
+    }
+}
+----------------Output________________
+Enter your name: Devansh
+Enter your age: 19
+Welcome, Devansh You are 19 years old.
